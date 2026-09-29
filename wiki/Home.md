@@ -42,14 +42,14 @@ wiki/
 
 | 영역 | 문서 | 대상 체인 / 주제 | 주요 다룸 내용 |
 | :--- | :--- | :--- | :--- |
-| **코어 아키텍처** | [**01. Canton Network 개요**](01_Canton_Network_Deep_Dive.md) | Canton Network | Daml 계약 모델, Sub-transaction Privacy, Global Synchronizer |
-| **코어 아키텍처** | [**02. Circle Arc 개요**](02_Circle_Arc_Chain_Deep_Dive.md) | Circle Arc L1 | USDC 네이티브 가스, Malachite 합의, BlackRock/Visa 밸리데이터셋 |
-| **개발자 실무** | [**05. Canton 개발자 가이드**](05_Canton_Network_Developer_Guide.md) | Daml & Canton API | Daml STO/DvP 코드 예제, gRPC Ledger API, JSON API v2 연동 |
-| **개발자 실무** | [**06. Circle Arc 개발자 가이드**](06_Circle_Arc_Developer_Guide.md) | Arc EVM & CCTP | USDC 가스 측정, EIP-3009 가스리스 서명, Foundry 배포, CCTP v2 |
-| **컴플라이언스** | [**07. Canton 컴플라이언스**](07_Canton_Network_Compliance_Guide.md) | 금융 법제 & 감독 | 전자서명 구속력, 금융실명법/신용정보법 준수, Auditor 노드 SupTech |
-| **컴플라이언스** | [**08. Circle Arc 컴플라이언스**](08_Circle_Arc_Compliance_Guide.md) | 준비자산 & 사법집행 | 100% 분리 신탁(도산격리), blacklist 동결권 영장 집행, 트래블룰 |
-| **금융당국 총괄** | [**03. 금융당국 3대 의제 분석**](03_Regulatory_Compliance_Analysis.md) | 금감원·금융위·한은 | 스테이블코인 2단계, 자본시장 결제완결성/망분리, STO 전자등록 |
-| **종합 전략** | [**04. 종합 비교 및 전략**](04_Comparative_Matrix_and_ZKRYPTON_Strategy.md) | 종합 비교 & ZKRYPTON | 4대 축 종합 비교표, ZKRYPTON NAA(0x7a) & Arkworks ZKP 차별화 |
+| **코어 아키텍처** | [**01. Canton Network 개요**](https://github.com/snowd-zk/zkrypton_vs/wiki/01_Canton_Network_Deep_Dive) | Canton Network | Daml 계약 모델, Sub-transaction Privacy, Global Synchronizer |
+| **코어 아키텍처** | [**02. Circle Arc 개요**](https://github.com/snowd-zk/zkrypton_vs/wiki/02_Circle_Arc_Chain_Deep_Dive) | Circle Arc L1 | USDC 네이티브 가스, Malachite 합의, BlackRock/Visa 밸리데이터셋 |
+| **개발자 실무** | [**05. Canton 개발자 가이드**](https://github.com/snowd-zk/zkrypton_vs/wiki/05_Canton_Network_Developer_Guide) | Daml & Canton API | Daml STO/DvP 코드 예제, gRPC Ledger API, JSON API v2 연동 |
+| **개발자 실무** | [**06. Circle Arc 개발자 가이드**](https://github.com/snowd-zk/zkrypton_vs/wiki/06_Circle_Arc_Developer_Guide) | Arc EVM & CCTP | USDC 가스 측정, EIP-3009 가스리스 서명, Foundry 배포, CCTP v2 |
+| **컴플라이언스** | [**07. Canton 컴플라이언스**](https://github.com/snowd-zk/zkrypton_vs/wiki/07_Canton_Network_Compliance_Guide) | 금융 법제 & 감독 | 전자서명 구속력, 금융실명법/신용정보법 준수, Auditor 노드 SupTech |
+| **컴플라이언스** | [**08. Circle Arc 컴플라이언스**](https://github.com/snowd-zk/zkrypton_vs/wiki/08_Circle_Arc_Compliance_Guide) | 준비자산 & 사법집행 | 100% 분리 신탁(도산격리), blacklist 동결권 영장 집행, 트래블룰 |
+| **금융당국 총괄** | [**03. 금융당국 3대 의제 분석**](https://github.com/snowd-zk/zkrypton_vs/wiki/03_Regulatory_Compliance_Analysis) | 금감원·금융위·한은 | 스테이블코인 2단계, 자본시장 결제완결성/망분리, STO 전자등록 |
+| **종합 전략** | [**04. 종합 비교 및 전략**](https://github.com/snowd-zk/zkrypton_vs/wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy) | 종합 비교 & ZKRYPTON | 4대 축 종합 비교표, ZKRYPTON NAA(0x7a) & Arkworks ZKP 차별화 |
 
 ---
 
