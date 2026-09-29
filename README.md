@@ -31,8 +31,12 @@
 
 | 모듈 | 핵심 주제 | 문서 링크 (저장소) | Wiki 링크 |
 | :--- | :--- | :--- | :--- |
-| **01. Canton Network** | 기관용 프라이버시 상호운용 네트워크 | [`wiki/01_Canton_Network_Deep_Dive.md`](wiki/01_Canton_Network_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/01_Canton_Network_Deep_Dive) |
-| **02. Circle Arc** | 스테이블코인 네이티브 L1 결제 인프라 | [`wiki/02_Circle_Arc_Chain_Deep_Dive.md`](wiki/02_Circle_Arc_Chain_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/02_Circle_Arc_Chain_Deep_Dive) |
+| **01. Canton Network 개요** | 기관용 프라이버시 상호운용 네트워크 | [`wiki/01_Canton_Network_Deep_Dive.md`](wiki/01_Canton_Network_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/01_Canton_Network_Deep_Dive) |
+| **02. Circle Arc 개요** | 스테이블코인 네이티브 L1 결제 인프라 | [`wiki/02_Circle_Arc_Chain_Deep_Dive.md`](wiki/02_Circle_Arc_Chain_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/02_Circle_Arc_Chain_Deep_Dive) |
+| **05. Canton 개발자 가이드** | Daml 스마트 계약, Ledger API 및 DvP 코드 | [`wiki/05_Canton_Network_Developer_Guide.md`](wiki/05_Canton_Network_Developer_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/05_Canton_Network_Developer_Guide) |
+| **06. Circle Arc 개발자 가이드** | USDC 가스리스, EIP-3009 및 CCTP v2 연동 | [`wiki/06_Circle_Arc_Developer_Guide.md`](wiki/06_Circle_Arc_Developer_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/06_Circle_Arc_Developer_Guide) |
+| **07. Canton 컴플라이언스** | 금융실명법/신용정보법/망분리 및 Auditor 노드 | [`wiki/07_Canton_Network_Compliance_Guide.md`](wiki/07_Canton_Network_Compliance_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/07_Canton_Network_Compliance_Guide) |
+| **08. Circle Arc 컴플라이언스** | 100% 준비자산 신탁, 사법동결권 및 트래블룰 | [`wiki/08_Circle_Arc_Compliance_Guide.md`](wiki/08_Circle_Arc_Compliance_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/08_Circle_Arc_Compliance_Guide) |
 | **03. 금융당국 규제 분석** | 금감원·금융위 3대 핵심 의제 분석 | [`wiki/03_Regulatory_Compliance_Analysis.md`](wiki/03_Regulatory_Compliance_Analysis.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/03_Regulatory_Compliance_Analysis) |
 | **04. 비교 분석 및 전략** | 4대 축 비교 매트릭스 및 ZKRYPTON 전략 | [`wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy.md`](wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy) |
 

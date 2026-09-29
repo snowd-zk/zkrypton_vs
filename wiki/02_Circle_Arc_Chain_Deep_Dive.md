@@ -50,9 +50,9 @@ flowchart TD
         end
     end
 
-    Users["기업 / 핀테크 / AI 에이전트"] -->|트랜잭션 (USDC 수수료 지불)| ExecutionLayer
+    Users["기업 / 핀테크 / AI 에이전트"] -->|"트랜잭션 (USDC 수수료 지불)"| ExecutionLayer
     ExecutionLayer --> ConsensusEngine
-    CCTP <==>|무브릿지 소각·발행| ExternalChains["Ethereum / Arbitrum / Solana / Base"]
+    CCTP <-->|"무브릿지 소각 및 발행"| ExternalChains["Ethereum / Arbitrum / Solana / Base"]
 ```
 
 ### A. USDC 네이티브 가스 모델 (Stablecoin-Native Gas)
@@ -114,3 +114,15 @@ flowchart TD
    - BlackRock, Visa 등 허가된 소수 기관 밸리데이터가 합의를 독점하고, Circle이 단독으로 네이티브 토큰(USDC)의 동결권을 행사할 수 있으므로, 암호화폐 본연의 탈중앙 검열 저항성은 사실상 포기된 구조입니다.
 3. **규제 종속성 (Regulatory Single Point of Failure)**:
    - 미국 재무부(OFAC)나 미국 규제 당국의 정책 변화에 네트워크 전체가 종속되므로, 한국 금융당국 입장에서는 **외환 주권 및 금융 인프라 종속 리스크**를 신중하게 검토해야 합니다.
+
+---
+
+## 6. Circle Arc vs ZKRYPTON 종합 비교
+
+| 비교 항목 | 🌐 Circle Arc | 🛡️ ZKRYPTON (zkrypto) | 시사점 및 차별화 포인트 |
+| :--- | :--- | :--- | :--- |
+| **코어 실행 엔진** | Malachite BFT 기반 EVM (Chain ID 5042) | **Rust Reth / Revm 초고성능 EVM** | ZKRYPTON이 실측 10,000 TPS로 동등 이상의 성능 제공 |
+| **가스비 모델** | **USDC 직접 차감/소각** (달러 고정비) | **NAA (0x7a) 원화 정산 에스크로 & 가스 대납** | Arc는 달러 기준, ZKRYPTON은 국내 기업용 원화(KRW) 결제에 최적화 |
+| **금융 프라이버시** | 없음 (모든 잔액 및 스마트 컨트랙트 공개) | **Arkworks BN254 영지식 증명 (ZKP)** | ZKRYPTON만이 국내 신용정보법/금융실명제 기밀성 요건 충족 |
+| **계정 추상화** | 표준 EOA + EIP-3009/4337 응용 | **프로토콜 네이티브 계정 추상화 (NAA)** | ZKRYPTON은 서명 분리 및 세션키를 네이티브 레벨에서 고속 처리 |
+| **규제 거버넌스** | BlackRock, Visa 등 해외 컨소시엄 | **국내 은행 및 삼성SDS 중심 컨소시엄** | 데이터 주권 및 국내 금융 망분리 규제 완화 요건 100% 대응 |

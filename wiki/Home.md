@@ -30,18 +30,26 @@ wiki/
 ├── 02_Circle_Arc_Chain_Deep_Dive.md          # Circle Arc L1 체인, USDC 가스 모델 및 결제 인프라 심층 분석
 ├── 03_Regulatory_Compliance_Analysis.md      # 금감원·금융위 3대 핵심 의제(스테이블코인, 자본시장, STO) 규제 분석
 ├── 04_Comparative_Matrix_and_ZKRYPTON_Strategy.md # 4대 축 비교 매트릭스 및 ZKRYPTON 차별화 전략
+├── 05_Canton_Network_Developer_Guide.md      # Canton & Daml 스마트 계약, Ledger API 및 개발자 가이드
+├── 06_Circle_Arc_Developer_Guide.md          # Circle Arc EVM 아키텍처, USDC 가스리스 및 CCTP 개발자 가이드
+├── 07_Canton_Network_Compliance_Guide.md     # Canton 계약 법률 강제, 금융 프라이버시 및 감독 가시성 가이드
+├── 08_Circle_Arc_Compliance_Guide.md         # Circle Arc 준비자산 신탁, 사법 집행 동결권 및 트래블룰 가이드
 ├── _Sidebar.md                               # GitHub Wiki 사이드바 네비게이션
 └── _Footer.md                                # 위키 공통 푸터
 ```
 
 ### 📑 모듈별 핵심 내용 요약
 
-| 문서 | 핵심 주제 | 대상 체인 / 주체 | 주요 다룸 내용 |
+| 영역 | 문서 | 대상 체인 / 주제 | 주요 다룸 내용 |
 | :--- | :--- | :--- | :--- |
-| [**01. Canton Network**](01_Canton_Network_Deep_Dive.md) | 기관용 프라이버시 상호운용 네트워크 | Canton Network (Digital Asset) | • Daml 스마트 컨트랙트 모델<br>• Sub-transaction Privacy (Need-to-know)<br>• Global Synchronizer (Sequencer & Mediator)<br>• 원자적 DvP 및 24/7 담보 이동성 |
-| [**02. Circle Arc**](02_Circle_Arc_Chain_Deep_Dive.md) | 스테이블코인 네이티브 L1 결제 인프라 | Circle Arc (Chain ID: 5042) | • USDC 네이티브 가스 토큰 모델<br>• Malachite 합의 및 서브세컨드 확정성<br>• BlackRock, Visa 등 기관 밸리데이터셋<br>• Hashnote USYC 및 CCTP 라우팅 |
-| [**03. 금융당국 규제 분석**](03_Regulatory_Compliance_Analysis.md) | 금감원·금융위·한은 규제 프레임워크 | 규제 당국 & 국내 제도 | • **스테이블코인**: 이용자보호법 2단계 및 지급준비금<br>• **기관 자본시장**: 결제완결성, 장외파생/레포, 망분리<br>• **토큰증권(STO)**: 분산원장 요건, 계좌관리기관<br>• **감독 가시성**: 감사 노드 vs 영지식 감사 증명 |
-| [**04. 비교 분석 및 전략**](04_Comparative_Matrix_and_ZKRYPTON_Strategy.md) | 종합 비교 매트릭스 및 ZKRYPTON 전략 | Canton vs Arc vs ZKRYPTON | • 4대 축(아키텍처, 프라이버시/암호학, 규제, 상호운용성) 매트릭스<br>• ZKRYPTON NAA & Arkworks ZKP 차별화<br>• 삼성SDS 협력 및 국내 금융 컨소시엄 선도 방안 |
+| **코어 아키텍처** | [**01. Canton Network 개요**](01_Canton_Network_Deep_Dive.md) | Canton Network | Daml 계약 모델, Sub-transaction Privacy, Global Synchronizer |
+| **코어 아키텍처** | [**02. Circle Arc 개요**](02_Circle_Arc_Chain_Deep_Dive.md) | Circle Arc L1 | USDC 네이티브 가스, Malachite 합의, BlackRock/Visa 밸리데이터셋 |
+| **개발자 실무** | [**05. Canton 개발자 가이드**](05_Canton_Network_Developer_Guide.md) | Daml & Canton API | Daml STO/DvP 코드 예제, gRPC Ledger API, JSON API v2 연동 |
+| **개발자 실무** | [**06. Circle Arc 개발자 가이드**](06_Circle_Arc_Developer_Guide.md) | Arc EVM & CCTP | USDC 가스 측정, EIP-3009 가스리스 서명, Foundry 배포, CCTP v2 |
+| **컴플라이언스** | [**07. Canton 컴플라이언스**](07_Canton_Network_Compliance_Guide.md) | 금융 법제 & 감독 | 전자서명 구속력, 금융실명법/신용정보법 준수, Auditor 노드 SupTech |
+| **컴플라이언스** | [**08. Circle Arc 컴플라이언스**](08_Circle_Arc_Compliance_Guide.md) | 준비자산 & 사법집행 | 100% 분리 신탁(도산격리), blacklist 동결권 영장 집행, 트래블룰 |
+| **금융당국 총괄** | [**03. 금융당국 3대 의제 분석**](03_Regulatory_Compliance_Analysis.md) | 금감원·금융위·한은 | 스테이블코인 2단계, 자본시장 결제완결성/망분리, STO 전자등록 |
+| **종합 전략** | [**04. 종합 비교 및 전략**](04_Comparative_Matrix_and_ZKRYPTON_Strategy.md) | 종합 비교 & ZKRYPTON | 4대 축 종합 비교표, ZKRYPTON NAA(0x7a) & Arkworks ZKP 차별화 |
 
 ---
 

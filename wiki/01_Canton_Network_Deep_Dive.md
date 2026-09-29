@@ -53,13 +53,13 @@ flowchart TD
         AuditLedger["규제 감사 뷰 (Read-Only State)"]
     end
 
-    ParticipantA <==>|암호화된 서브트랜잭션 뷰| ParticipantB
-    ParticipantA -->|암호화 봉투 제출| SEQ
-    ParticipantB -->|암호화 봉투 제출| SEQ
+    ParticipantA <-->|"암호화된 서브트랜잭션 뷰"| ParticipantB
+    ParticipantA -->|"암호화 봉투 제출"| SEQ
+    ParticipantB -->|"암호화 봉투 제출"| SEQ
     SEQ --> MED
-    MED -->|확정 결과 브로드캐스트| ParticipantA
-    MED -->|확정 결과 브로드캐스트| ParticipantB
-    ParticipantA -.->|인가된 법적 감사 데이터 전달| RegulatorNode
+    MED -->|"확정 결과 브로드캐스트"| ParticipantA
+    MED -->|"확정 결과 브로드캐스트"| ParticipantB
+    ParticipantA -.->|"인가된 법적 감사 데이터 전달"| RegulatorNode
 ```
 
 ### A. 프로토콜 구성 요소 (Architectural Components)
@@ -137,3 +137,15 @@ $$\text{Transaction } T = \{V_1, V_2, \dots, V_k\}$$
    - 2개 이상의 동기화 도메인을 가로지르는 원자적 트랜잭션의 경우, 복수의 미디에이터 및 참여자 간 라운드트립 통신으로 인해 단일 블록체인 대비 지연 시간(Latency)이 1~3초 수준으로 증가할 수 있습니다.
 3. **슈퍼 밸리데이터(SV) 위원회의 거버넌스 집중**:
    - 글로벌 싱크로나이저를 운영하는 SV 노드들이 대부분 미국/유럽 대형 금융기관에 집중되어 있어, 국내 금융당국 입장에서는 **주권적 통제권(Sovereign Regulatory Control)** 및 데이터 국외 이전 이슈가 제기될 수 있습니다.
+
+---
+
+## 7. Canton Network vs ZKRYPTON 종합 비교
+
+| 비교 항목 | 🏛️ Canton Network | 🛡️ ZKRYPTON (zkrypto) | 시사점 및 차별화 포인트 |
+| :--- | :--- | :--- | :--- |
+| **스마트 계약 언어** | Daml (함수형 스마트 계약 전용 언어) | **Solidity 100% 호환 (EVM 표준)** | ZKRYPTON은 기존 Web3 개발 인력 및 컨트랙트 즉시 재활용 가능 |
+| **프라이버시 메커니즘** | **Sub-transaction Privacy** (뷰 프로젝션) | **Arkworks BN254 영지식 증명 (ZKP)** | Canton은 계약 분할 방식, ZKRYPTON은 수학적 은닉 및 즉시 검증 |
+| **크로스도메인 완결성** | 시퀀서 + 미디에이터 간 다단계 2PC (1~3초) | **zkBFT 단일 엔진 내 즉시 서브세컨드 확정** | ZKRYPTON이 복합 트랜잭션 처리 지연시간(Latency) 대폭 단축 |
+| **감사관(감독당국) 연동** | Auditor Participant Node 직접 구축 필수 | **ZKP 기반 선택적 규제 증명 (Selective Disclosure)** | ZKRYPTON은 감독당국의 무거운 풀노드 운영 부담을 영지식 검증기로 대체 |
+| **국내 거버넌스 주권** | 글로벌 SV 위원회 의존 (미국/유럽 중심) | **국내 금융기관 및 삼성SDS 중심 컨소시엄** | 데이터 국외 이전 법령 및 국내 전자금융감독규정에 완벽 부합 |
