@@ -1,112 +1,97 @@
-# 🏛️ ZKRYPTON vs Canton Network vs Circle Arc
-## 금융당국(금감원·금융위·한은) 관점의 기관용 블록체인 인프라 심층 분석 & 지식베이스
+# 🛡️ ZKRYPTON 블록체인 분석 & 리서치 프로젝트
 
-[![GitHub Wiki](https://img.shields.io/badge/GitHub-Wiki-blue?logo=github)](https://github.com/snowd-zk/zkrypton_vs/wiki)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![zkrypto](https://img.shields.io/badge/Developed%20by-zkrypto-0052FF)](https://zkrypto.com)
-
-본 저장소는 **금융감독원, 금융위원회, 한국은행** 등 대한민국 금융당국이 주목하고 있는 글로벌 차세대 기관용 금융 블록체인 인프라(**Canton Network**, **Circle Arc**)의 기술 아키텍처와 규제 준수성을 심층 분석하고, 지크립토(zkrypto)의 차세대 기관용 블록체인 **ZKRYPTON**의 기술적 차별화 및 제도적 포지셔닝 전략을 집대성한 지식베이스입니다.
-
-> 📖 **GitHub Wiki 바로가기**: [https://github.com/snowd-zk/zkrypton_vs/wiki](https://github.com/snowd-zk/zkrypton_vs/wiki)
+지크립토(zkrypto)의 차세대 블록체인 **ZKRYPTON**에 대한 기술적·사업적 심층 분석과 글로벌 블록체인 프로젝트 리서치 및 벤치마킹을 체계적으로 수행·관리하기 위한 프로젝트 저장소입니다.
 
 ---
 
-## 📌 배경 및 리서치 목적
+## 🎯 프로젝트 목적
 
-2026년 하반기, 글로벌 및 국내 금융권은 단순 PoC 단계를 넘어 **실제 자본시장 및 제도권 통화 인프라의 온체인화(On-Chain Institutional Settlement)** 단계에 본격 진입하였습니다.
-
-1. **글로벌 금융 시장의 지각변동**:
-   - **Canton Network (Digital Asset)**: DTCC, Euroclear, BNY Mellon, Goldman Sachs 등 글로벌 초대형 금융기관들이 참여하여 프라이버시 보장과 원장 간 원자적 동시결제(Atomic DvP)를 구현하는 상호운용 금융 네트워크로 부상.
-   - **Circle Arc (Circle L1)**: 2026년 9월 메인넷을 공식 출시하며, 휘발성 네이티브 토큰 대신 **USDC를 네이티브 가스 토큰**으로 채택하고 BlackRock, Visa, Mastercard, DTCC 등 초대형 금융 컨소시엄을 밸리데이터로 확보하여 '인터넷의 경제 OS'를 표방.
-2. **국내 금융당국(금감원·금융위·한국은행)의 정책적 관심 집중**:
-   - **토큰증권(STO)**: 분산원장의 법적 효력 인정, 계좌관리기관 인가 요건, 투자자 보호 및 분산원장 기재 요건 법제화.
-   - **스테이블코인 및 예금토큰**: 가상자산이용자보호법 2단계(디지털자산기본법), 원화/외화 스테이블코인 규율체계, 한국은행 CBDC 및 아고라(Agora) 프로젝트 연계.
-   - **기관 자본시장 인프라 & 금융 망분리**: 전자금융감독규정 개정에 따른 SaaS·클라우드·블록체인 활용 가이드라인, 결제완결성(채무자회생법 특례) 보장.
-3. **ZKRYPTON의 전략적 포지셔닝**:
-   - Rust Reth/Revm 고성능 EVM 엔진, zkBFT 합의, 네이티브 계정 추상화(NAA), Arkworks 기반 BN254 영지식 증명(ZKP) 프리컴파일을 탑재한 ZKRYPTON이 글로벌 외산 체인 대비 제공할 수 있는 **프라이버시-컴플라이언스 양립 구조**와 **국내 제도권 최적화 전략** 확립.
-
----
-
-## 🧭 지식베이스 목차 (Knowledge Base Index)
-
-| 모듈 | 핵심 주제 | 문서 링크 (저장소) | Wiki 링크 |
-| :--- | :--- | :--- | :--- |
-| **01. Canton Network 개요** | 기관용 프라이버시 상호운용 네트워크 | [`wiki/01_Canton_Network_Deep_Dive.md`](wiki/01_Canton_Network_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/01_Canton_Network_Deep_Dive) |
-| **02. Circle Arc 개요** | 스테이블코인 네이티브 L1 결제 인프라 | [`wiki/02_Circle_Arc_Chain_Deep_Dive.md`](wiki/02_Circle_Arc_Chain_Deep_Dive.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/02_Circle_Arc_Chain_Deep_Dive) |
-| **05. Canton 개발자 가이드** | Daml 스마트 계약, Ledger API 및 DvP 코드 | [`wiki/05_Canton_Network_Developer_Guide.md`](wiki/05_Canton_Network_Developer_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/05_Canton_Network_Developer_Guide) |
-| **06. Circle Arc 개발자 가이드** | USDC 가스리스, EIP-3009 및 CCTP v2 연동 | [`wiki/06_Circle_Arc_Developer_Guide.md`](wiki/06_Circle_Arc_Developer_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/06_Circle_Arc_Developer_Guide) |
-| **07. Canton 컴플라이언스** | 금융실명법/신용정보법/망분리 및 Auditor 노드 | [`wiki/07_Canton_Network_Compliance_Guide.md`](wiki/07_Canton_Network_Compliance_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/07_Canton_Network_Compliance_Guide) |
-| **08. Circle Arc 컴플라이언스** | 100% 준비자산 신탁, 사법동결권 및 트래블룰 | [`wiki/08_Circle_Arc_Compliance_Guide.md`](wiki/08_Circle_Arc_Compliance_Guide.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/08_Circle_Arc_Compliance_Guide) |
-| **03. 금융당국 규제 분석** | 금감원·금융위 3대 핵심 의제 분석 | [`wiki/03_Regulatory_Compliance_Analysis.md`](wiki/03_Regulatory_Compliance_Analysis.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/03_Regulatory_Compliance_Analysis) |
-| **04. 비교 분석 및 전략** | 4대 축 비교 매트릭스 및 ZKRYPTON 전략 | [`wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy.md`](wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy.md) | [Wiki 보기](https://github.com/snowd-zk/zkrypton_vs/wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy) |
+1. **ZKRYPTON 자체 블록체인 심층 분석 및 문서화**
+   - 아키텍처(체인 어댑터, 정책 엔진, 합의 메커니즘 등) 체계화
+   - 영지식 증명(ZKP) 기반 프라이버시 보호 구조 및 회로 설계 분석
+   - 키 관리 및 보안 모델(MPC 셰어볼트, HSM/sHSM, AMD SEV, eBPF & SELinux, HD 월렛) 정리
+   - 인프라(Blockscout, SCP 자원 등) 및 마일스톤(SDS 협력, 연말 제품화, PoC) 관리
+2. **글로벌 블록체인 프로젝트 리서치 & 벤치마킹**
+   - ZK/Privacy L1/L2, 엔터프라이즈 컨소시엄, 모듈러 롤업, 기관용 MPC 커스터디 프로젝트 조사
+   - ZKRYPTON과의 기술·비즈니스 비교 분석(Comparative Matrix) 도출 및 차별화 전략 수립
+3. **대내외 기술 문서 및 커뮤니케이션 자산화**
+   - 기술 명세(API, Data Model), 경영진/팀 내부 보고서, 대외 파트너/IR 발표 자료 표준화
 
 ---
 
-## 📊 4대 축 종합 비교 매트릭스
+## 📂 디렉토리 구조
 
-| 비교 축 | 🏛️ Canton Network | 🌐 Circle Arc | 🛡️ ZKRYPTON (zkrypto) |
-| :--- | :--- | :--- | :--- |
-| **1. 아키텍처 & 합의** | Daml 런타임 (비-EVM)<br>시퀀서+미디에이터 2PC | 완전 EVM (Chain ID 5042)<br>Malachite BFT 합의 | **Rust Reth/Revm 초고성능 EVM**<br>**zkBFT (Stable Leader, 10,000 TPS)** |
-| **2. 프라이버시 & 암호학** | Sub-transaction Privacy<br>(Need-to-know 뷰 투영) | 없음 (Public EVM Ledger)<br>모든 계좌 및 거래내역 공개 | **Arkworks BN254 ZK 프리컴파일**<br>**수학적 영지식 증명(ZKP) 기밀성** |
-| **3. 가스비 & 계정 모델** | 도메인별 정책 과금<br>Party 기반 모델 | **USDC 네이티브 가스**<br>표준 EOA 모델 | **네이티브 계정 추상화 (NAA 0x7a)**<br>**원화 에스크로 정산 & 가스 대납** |
-| **4. 규제 & 컴플라이언스** | 해외 금융사 SV 거버넌스<br>Auditor 노드 감사 | 미 재무부/Circle 단일 종속<br>중앙화 블랙리스트 동결 | **국내 금융 컨소시엄 주권 확보**<br>**ZKP 선택적 규제 증명 (Compliance)** |
-
----
-
-## 🏗️ 전체 시스템 비교 아키텍처
-
-```mermaid
-flowchart TB
-    subgraph Regulatory["🏛️ 대한민국 금융당국 (금감원 / 금융위 / 한국은행)"]
-        REG1["가상자산이용자보호법 2단계<br>(스테이블코인 규율)"]
-        REG2["전자등록법·자본시장법<br>(토큰증권 STO 제도화)"]
-        REG3["전자금융감독규정<br>(망분리 완화 & 감사 가시성)"]
-    end
-
-    subgraph Canton["Canton Network (Digital Asset)"]
-        C1["Daml 계약 모델"]
-        C2["Sub-transaction Privacy<br>(Need-to-know 뷰 투영)"]
-        C3["Global Synchronizer<br>(Sequencer + Mediator)"]
-    end
-
-    subgraph Arc["Circle Arc (Circle L1)"]
-        A1["EVM 호환 (Chain ID 5042)"]
-        A2["USDC 네이티브 가스 토큰"]
-        A3["Malachite 합의<br>(BlackRock, Visa 등 밸리데이터)"]
-    end
-
-    subgraph Zkrypton["ZKRYPTON (zkrypto)"]
-        Z1["Rust Reth/Revm 코어 + NAA (0x7a)"]
-        Z2["Arkworks BN254 ZK 프리컴파일<br>(영지식 프라이버시 & 규제 감사)"]
-        Z3["zkBFT 합의 + MPC/SEV/eBPF 보안"]
-    end
-
-    Regulatory -.-> Canton
-    Regulatory -.-> Arc
-    Regulatory ==> Zkrypton
+```text
+ZKRYPTON/
+├── 00_Templates_References/             # 공통 문서 템플릿 및 외부 참고자료
+│   ├── Templates/                       # ZKRYPTON 분석 및 리서치 표준 템플릿
+│   │   ├── zkrypton_analysis_template.md
+│   │   └── project_research_template.md
+│   └── References/                      # 백서, 학술 논문, 발표자료 및 링크 모음
+│
+├── 01_ZKRYPTON_Analysis/                # [자사] ZKRYPTON 심층 분석 & 기술 정리
+│   ├── 01_Architecture/                 # 시스템 아키텍처, 체인 어댑터, 정책 엔진
+│   ├── 02_ZKP_Privacy/                  # 영지식 증명(ZKP), 회로 설계, 프라이버시 트랜잭션
+│   ├── 03_Key_Management_Security/     # 키 관리 (MPC, HSM/sHSM, SEV, eBPF, HD Wallet)
+│   ├── 04_Ecosystem_Infra/              # 익스플로러(Blockscout), 노드/클라우드 자원(SCP), SDK
+│   └── 05_Roadmap_Milestones/           # 개발 로드맵, SDS 등 협력 과제, PoC 진행 현황
+│
+├── 02_Market_Research/                  # [외부] 블록체인 프로젝트 리서치 & 벤치마킹
+│   ├── 01_ZK_Privacy_Chains/            # ZK/Privacy 체인 (Aleo, Mina, Aztec, Starknet 등)
+│   ├── 02_Enterprise_Consortium/        # 엔터프라이즈 체인 (Nexledger, Hyperledger, Quorum 등)
+│   ├── 03_Modular_Rollup/               # 모듈러 블록체인 (Celestia, Rollup 솔루션)
+│   ├── 04_MPC_Institutional_Custody/    # MPC 지갑 & 기관용 커스터디 (Fireblocks 등)
+│   └── 05_Comparative_Analysis/         # ZKRYPTON vs 경쟁사 비교 분석표 및 종합 리포트
+│
+├── 03_Technical_Specs/                  # ZKRYPTON 세부 기술 명세서
+│   ├── API_Specs/                       # 체인 어댑터, RPC, 정책 엔진 API 명세
+│   └── Data_Models/                     # 트랜잭션/블록 스키마, Proof 직렬화 포맷
+│
+├── 04_Presentations_Reports/            # 대내외 브리핑 & 발표 자료
+│   ├── Internal_Briefings/              # 경영진/팀 공유용 요약 보고서 및 회의 안건
+│   └── External_Materials/              # 파트너 미팅(SDS 등), IR, 대외 기술 소개서
+│
+└── wiki/                                # 🏛️ 금융 인프라 & 규제 심층 분석 WIKI
+    ├── Home.md                          # 위키 메인 허브 및 총괄 개요
+    ├── 01_Canton_Network_Deep_Dive.md   # Canton Network 개요 (Daml, 프라이버시, DvP)
+    ├── 02_Circle_Arc_Chain_Deep_Dive.md # Circle Arc L1 개요 (USDC 가스, Malachite 합의)
+    ├── 03_Regulatory_Compliance_Analysis.md # 금감원·금융위 3대 의제(스테이블코인, 자본시장, STO)
+    ├── 04_Comparative_Matrix_and_ZKRYPTON_Strategy.md # 4대 축 비교 및 ZKRYPTON 전략
+    ├── 05_Canton_Network_Developer_Guide.md  # Canton & Daml 개발자 심층 가이드
+    ├── 06_Circle_Arc_Developer_Guide.md      # Circle Arc EVM & CCTP 개발자 심층 가이드
+    ├── 07_Canton_Network_Compliance_Guide.md # Canton 금융 법제 & 감독 가시성 가이드
+    ├── 08_Circle_Arc_Compliance_Guide.md     # Circle Arc 준비자산 & 사법집행 동결권 가이드
+    └── 09_ZKRYPTON_FAQ_and_Canton_Comparison.md # ZKRYPTON 장단점, Canton 커밋먼트 비교 & 고객사 FAQ 20선
 ```
 
 ---
 
-## 🚀 ZKRYPTON의 3대 시장 선점 전략
+## 🛠️ 작업 가이드라인 (Workflow)
 
-1. **삼성SDS 협력 기반 은행권 "토큰화 예금(Tokenized Deposit)" 컨소시엄 주도**:
-   - 한국은행 CBDC/아고라 프로젝트의 국내 민간 대응망으로서, 삼성SDS 클라우드와 결합하여 국내 금융 망분리 가이드라인을 100% 충족하는 국산 ZK-EVM 코어 포지셔닝.
-2. **토큰증권(STO) 계좌관리기관 표준 분산원장 선점**:
-   - 증권사·신탁사를 대상으로 투자자 잔고를 ZKP로 보호하면서도, 금융감독원에만 실시간 법적 감사 증명을 제공하는 **선택적 공개(Selective Disclosure) 레퍼런스 아키텍처** 공급.
-3. **원화(KRW) 결제 및 엔터프라이즈 가스 대납 인프라 완성**:
-   - Arc 체인의 장점(법정화폐 연동 예측 가능 비용)을 흡수하여, ZKRYPTON NAA(Type 0x7a)를 활용한 **"원화 법인계좌 일괄 정산 Paymaster"**를 통해 기업의 가상자산 보유 리스크 완전 제거.
+### 1. ZKRYPTON 내부 기능/모듈 문서 작성 시
+1. [`00_Templates_References/Templates/zkrypton_analysis_template.md`](00_Templates_References/Templates/zkrypton_analysis_template.md)를 복사하여 `01_ZKRYPTON_Analysis/` 하위 해당 폴더에 배치합니다.
+2. 시스템 구조, 적용 기술, 보안 수준, 그리고 개발 현황(완료/미완/블로커)을 단계적으로 정리합니다.
 
----
-
-## 🛠️ GitHub Wiki 동기화 가이드
-
-본 저장소의 `wiki/` 폴더 내 마크다운 파일들은 GitHub Wiki (`.wiki.git`)와 완벽히 호환되도록 구성되어 있습니다.
-
-```bash
-# GitHub Wiki 저장소로 직접 푸시하기
-./sync_to_github_wiki.sh
-```
+### 2. 외부 블록체인 프로젝트 리서치 시
+1. [`00_Templates_References/Templates/project_research_template.md`](00_Templates_References/Templates/project_research_template.md)를 복사하여 `02_Market_Research/` 하위 해당 폴더에 배치합니다.
+2. 개요 및 기술 아키텍처 분석 후, 반드시 **"ZKRYPTON에 주는 시사점 및 차별화 포인트"**를 기록합니다.
 
 ---
-*© 2026 zkrypto Inc. All Rights Reserved.*
+
+## 📚 핵심 분석 문서 바로가기 (2026.09.28 기준)
+
+- 🏗️ **코어 아키텍처 & 합의**: [`01_ZKRYPTON_Analysis/01_Architecture/01_rust_evm_core_architecture.md`](01_ZKRYPTON_Analysis/01_Architecture/01_rust_evm_core_architecture.md)
+  - Rust Reth/Revm 기반 EVM 엔진, zkBFT 합의, BLS 집계 서명, Stable Leader N-블록 재임(Tenure) 알고리즘
+- 🔐 **네이티브 계정 추상화 (NAA)**: [`01_ZKRYPTON_Analysis/01_Architecture/02_native_account_abstraction_naa.md`](01_ZKRYPTON_Analysis/01_Architecture/02_native_account_abstraction_naa.md)
+  - Unsigned Type 0x7a, 2단계 검증(병렬)/실행(순차), 32B 인증키, Max-fee Escrow 사전 차감 및 정산
+- ⚡ **실용적 ZK 검증 & 프리컴파일**: [`01_ZKRYPTON_Analysis/02_ZKP_Privacy/01_zk_verification_and_precompiles.md`](01_ZKRYPTON_Analysis/02_ZKP_Privacy/01_zk_verification_and_precompiles.md)
+  - Arkworks BN254 프리컴파일 패치, 페어링 캐시(`ZKRYPTON_BN254_PAIR_CACHE_ENTRIES`), zkVoting 구조 및 IPC 프레이밍 분석
+- 🛡️ **합의 안전성 & 키 관리**: [`01_ZKRYPTON_Analysis/03_Key_Management_Security/01_consensus_safety_and_recovery.md`](01_ZKRYPTON_Analysis/03_Key_Management_Security/01_consensus_safety_and_recovery.md)
+  - State WAL / Signing WAL 이원화 영속성, Monotonic Signing Floor(`SafetyTransactionV1`), 원격 서명자(Remote Signer)
+- 📊 **성능 벤치마크 & 출시 로드맵**: [`01_ZKRYPTON_Analysis/05_Roadmap_Milestones/01_performance_benchmarks_and_roadmap.md`](01_ZKRYPTON_Analysis/05_Roadmap_Milestones/01_performance_benchmarks_and_roadmap.md)
+  - 1k~10k TPS 부하 테스트 결과, 4-Validator E2E 검증, F1~F6 현안 및 10월 초 테스트넷 / 10월 말 메인넷 로드맵
+- 📑 **경영진 브리핑 리포트**: [`04_Presentations_Reports/Internal_Briefings/2026-09-28_ZKRYPTON_Executive_Summary.md`](04_Presentations_Reports/Internal_Briefings/2026-09-28_ZKRYPTON_Executive_Summary.md)
+  - 전사 공유용 종합 요약 및 권고사항
+- 🏛️ **금융 인프라 & 금융당국 규제 분석 WIKI**: [`wiki/Home.md`](wiki/Home.md)
+  - Canton Network · Circle Arc 심층 리서치, 금감원 3대 금융의제(스테이블코인, 자본시장, STO) 분석 및 ZKRYPTON 종합 전략
+

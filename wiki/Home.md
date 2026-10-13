@@ -34,6 +34,7 @@ wiki/
 ├── 06_Circle_Arc_Developer_Guide.md          # Circle Arc EVM 아키텍처, USDC 가스리스 및 CCTP 개발자 가이드
 ├── 07_Canton_Network_Compliance_Guide.md     # Canton 계약 법률 강제, 금융 프라이버시 및 감독 가시성 가이드
 ├── 08_Circle_Arc_Compliance_Guide.md         # Circle Arc 준비자산 신탁, 사법 집행 동결권 및 트래블룰 가이드
+├── 09_ZKRYPTON_FAQ_and_Canton_Comparison.md  # 🛡️ ZKRYPTON 장단점, Canton 커밋먼트 비교 & 고객사 질의대응 종합 FAQ 20선
 ├── _Sidebar.md                               # GitHub Wiki 사이드바 네비게이션
 └── _Footer.md                                # 위키 공통 푸터
 ```
@@ -50,6 +51,7 @@ wiki/
 | **컴플라이언스** | [**08. Circle Arc 컴플라이언스**](https://github.com/snowd-zk/zkrypton_vs/wiki/08_Circle_Arc_Compliance_Guide) | 준비자산 & 사법집행 | 100% 분리 신탁(도산격리), blacklist 동결권 영장 집행, 트래블룰 |
 | **금융당국 총괄** | [**03. 금융당국 3대 의제 분석**](https://github.com/snowd-zk/zkrypton_vs/wiki/03_Regulatory_Compliance_Analysis) | 금감원·금융위·한은 | 스테이블코인 2단계, 자본시장 결제완결성/망분리, STO 전자등록 |
 | **종합 전략** | [**04. 종합 비교 및 전략**](https://github.com/snowd-zk/zkrypton_vs/wiki/04_Comparative_Matrix_and_ZKRYPTON_Strategy) | 종합 비교 & ZKRYPTON | 4대 축 종합 비교표, ZKRYPTON NAA(0x7a) & Arkworks ZKP 차별화 |
+| **고객사 FAQ** | [**09. ZKRYPTON FAQ & 비교**](https://github.com/snowd-zk/zkrypton_vs/wiki/09_ZKRYPTON_FAQ_and_Canton_Comparison) | ZKRYPTON vs Canton | ZKRYPTON 장단점, Canton 커밋먼트 대비 기관적합성 평가, 실무 질의대응 FAQ 20선 |
 
 ---
 

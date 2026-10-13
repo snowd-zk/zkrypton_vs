@@ -56,5 +56,13 @@
 
 ---
 
+### 💬 5. 고객사 질의대응 & FAQ
+- [09. ZKRYPTON FAQ & 비교](https://github.com/snowd-zk/zkrypton_vs/wiki/09_ZKRYPTON_FAQ_and_Canton_Comparison)
+  - ZKRYPTON 객관적 장단점 분석
+  - Canton 커밋먼트 대비 기관적합성 평가
+  - 고객사 실무 질의대응 FAQ 20선 (아키텍처/프라이버시/규제/회계/보안)
+
+---
+
 ### 🔗 자사 ZKRYPTON 메인 저장소
 - [ZKRYPTON 메인 저장소 (GitHub)](https://github.com/snowd-zk/zkrypton_vs)
